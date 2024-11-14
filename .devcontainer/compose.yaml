@@ -1,0 +1,11 @@
+services:
+  mysrv:
+    working_dir: /app/mysrv
+    build:
+      context: .
+      dockerfile: Containerfile
+    command:
+      - "clojure"
+      - "-M:nREPL"
+    volumes:
+      - "../:/app/mysrv/:rw,z"

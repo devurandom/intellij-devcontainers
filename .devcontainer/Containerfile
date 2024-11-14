@@ -1,0 +1,5 @@
+FROM mcr.microsoft.com/vscode/devcontainers/java:11
+
+ADD https://github.com/clojure/brew-install/releases/download/1.12.0.1479/linux-install.sh install-clojure.sh
+RUN echo '94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830  install-clojure.sh' | sha256sum -c
+RUN bash ./install-clojure.sh

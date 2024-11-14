@@ -1,0 +1,23 @@
+{
+  "name": "My Service",
+  "dockerComposeFile": [
+      "compose.yaml"
+  ],
+  "service": "mysrv",
+  "workspaceFolder": "/app/mysrv",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/clojure-asdf:2": {}
+  },
+  "customizations": {
+    "jetbrains": {
+      "settings": {
+        "org.jetbrains.plugins.github:app:GithubSettings.clone_git_using_ssh": true
+      }
+    },
+    "vscode": {
+      "extensions": [
+        "betterthantomorrow.calva"
+      ]
+    }
+  }
+}
